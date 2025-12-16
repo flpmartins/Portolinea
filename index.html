@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portolinea Pinturas - Pintura residencial e industrial de alta qualidade. Equipe especializada, materiais premium e acabamento profissional.">
+    <title>Portolinea Pinturas - Pintura Residencial e Industrial</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="logo">
+                <img src="logo.png" alt="Portolinea Pinturas" class="logo-img">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#diferenciais">Diferenciais</a></li>
+                <li><a href="#contato" class="btn-nav">Contato</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" aria-label="Menu mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="gradient-shape gradient-shape-1"></div>
+            <div class="gradient-shape gradient-shape-2"></div>
+        </div>
+        <div class="container">
+            <div class="hero-wrapper">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Pintura de <span class="gradient-text">Alta Qualidade</span><br>
+                        para Residências e Indústrias
+                    </h1>
+                    <p class="hero-subtitle">
+                        Transformamos ambientes com acabamento profissional, materiais de primeira linha 
+                        e equipe especializada. Mais de 15 anos entregando excelência em cada projeto.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." 
+                           class="btn btn-primary" 
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                            Solicitar Orçamento
+                        </a>
+                        <a href="#servicos" class="btn btn-secondary">Conheça Nossos Serviços</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <svg class="paint-roller-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <!-- Gradiente principal do rolo -->
+                            <linearGradient id="rollerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#e63946;stop-opacity:1" />
+                                <stop offset="50%" style="stop-color:#f77f00;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#fcbf49;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        
+                        <!-- Rolo de pintura -->
+                        <g id="paint-roller">
+                            <!-- Rolo principal (retângulo horizontal, bordas retas e paralelas) -->
+                            <rect x="20" y="50" width="120" height="32" fill="url(#rollerGradient)"/>
+                            
+                            <!-- Braço/Estrutura (sai do lado direito do rolo) -->
+                            <!-- Primeira parte: horizontal saindo do rolo -->
+                            <line x1="140" y1="58" x2="148" y2="58" stroke="#2c3e50" stroke-width="4" stroke-linecap="round"/>
+                            
+                            <!-- Segunda parte: curva acentuada para baixo (quase 90 graus) -->
+                            <line x1="148" y1="58" x2="148" y2="82" stroke="#2c3e50" stroke-width="4" stroke-linecap="round"/>
+                            
+                            <!-- Terceira parte: curva ligeira para a esquerda antes do cabo -->
+                            <path d="M 148 82 Q 146 88 144 92" stroke="#2c3e50" stroke-width="4" fill="none" stroke-linecap="round"/>
+                            
+                            <!-- Cabo (vertical, cônico - mais largo na base/grip) -->
+                            <!-- Parte superior (mais estreita, conectada ao braço) -->
+                            <rect x="142" y="92" width="4" height="25" rx="2" fill="#2c3e50"/>
+                            
+                            <!-- Parte inferior (grip - mais largo e arredondado) -->
+                            <rect x="140" y="117" width="8" height="38" rx="4" fill="#2c3e50"/>
+                            <rect x="141.5" y="119" width="5" height="34" rx="2.5" fill="#34495e"/>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços Section -->
+    <section id="servicos" class="servicos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossos Serviços</h2>
+                <p class="section-subtitle">Soluções completas em pintura para todos os tipos de projetos</p>
+            </div>
+            <div class="servicos-grid">
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Pintura Residencial</h3>
+                    <p>Transformação completa de ambientes internos e externos, com atenção aos detalhes e acabamento impecável.</p>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="9" y1="3" x2="9" y2="21"></line>
+                            <line x1="15" y1="3" x2="15" y2="21"></line>
+                            <line x1="3" y1="9" x2="21" y2="9"></line>
+                            <line x1="3" y1="15" x2="21" y2="15"></line>
+                        </svg>
+                    </div>
+                    <h3>Pintura Industrial</h3>
+                    <p>Proteção e acabamento para estruturas industriais, galpões e instalações comerciais de grande porte.</p>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                        </svg>
+                    </div>
+                    <h3>Manutenção e Retoques</h3>
+                    <p>Serviços de reparo, retoques e manutenção preventiva para manter sua pintura sempre impecável.</p>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </div>
+                    <h3>Tratamento de Superfícies</h3>
+                    <p>Preparação adequada de superfícies, tratamento anti-mofo, impermeabilização e técnicas especiais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diferenciais Section -->
+    <section id="diferenciais" class="diferenciais">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Por Que Escolher a Portolinea?</h2>
+                <p class="section-subtitle">Compromisso com excelência em cada detalhe</p>
+            </div>
+            <div class="diferenciais-grid">
+                <div class="diferencial-item">
+                    <div class="diferencial-number">01</div>
+                    <h3>Equipe Especializada</h3>
+                    <p>Profissionais treinados e experientes, comprometidos com a qualidade e satisfação do cliente.</p>
+                </div>
+                <div class="diferencial-item">
+                    <div class="diferencial-number">02</div>
+                    <h3>Materiais de Alta Qualidade</h3>
+                    <p>Utilizamos apenas produtos premium das melhores marcas do mercado, garantindo durabilidade e acabamento superior.</p>
+                </div>
+                <div class="diferencial-item">
+                    <div class="diferencial-number">03</div>
+                    <h3>Cumprimento de Prazos</h3>
+                    <p>Organização e planejamento eficiente para entregar seu projeto no prazo combinado, sem comprometer a qualidade.</p>
+                </div>
+                <div class="diferencial-item">
+                    <div class="diferencial-number">04</div>
+                    <h3>Acabamento Profissional</h3>
+                    <p>Detalhismo e perfeccionismo em cada etapa, resultando em um acabamento impecável que supera expectativas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prova de Confiança Section -->
+    <section class="prova-confianca">
+        <div class="container">
+            <div class="prova-content">
+                <div class="prova-item">
+                    <div class="prova-number">15+</div>
+                    <div class="prova-label">Anos de Experiência</div>
+                </div>
+                <div class="prova-divider"></div>
+                <div class="prova-item">
+                    <div class="prova-number">500+</div>
+                    <div class="prova-label">Projetos Entregues</div>
+                </div>
+                <div class="prova-divider"></div>
+                <div class="prova-item">
+                    <div class="prova-number">300+</div>
+                    <div class="prova-label">Clientes Atendidos</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final Section -->
+    <section id="contato" class="cta-final">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Pronto para Transformar Seu Ambiente?</h2>
+                <p class="cta-subtitle">Solicite um orçamento gratuito e sem compromisso. Nossa equipe está pronta para atender você!</p>
+                <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." 
+                   class="btn btn-primary btn-large" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                    Fale Conosco pelo WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Portolinea Pinturas</h3>
+                    <p>Transformando ambientes com qualidade e profissionalismo desde 2009.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Área de Atuação</h4>
+                    <p>São Paulo e Região Metropolitana</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." 
+                       class="footer-whatsapp" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        WhatsApp: (11) 99999-9999
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Portolinea Pinturas. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
